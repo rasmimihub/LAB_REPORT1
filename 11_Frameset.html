@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frameset Example</title>
+</head> 
+<!----since frameset is no longer supported by the web browser because its outdated and instead of it we use div thats why only by mistaking syntax of html i.e removing body tag we can see output otherwise we cant.-->
+<frameset cols="30%, 70%"> 
+    <!-- Left side with two rows -->
+    <frameset rows="20%, 80%">  
+        <frame src="frame1.html" name="frame1">
+        <frame src="frame2.html" name="frame2">
+        </frameset>
+            <!--right column -->
+            <frameset rows="50%, 50%">
+                <!---upper row divided into two columns-->
+            <frameset cols="50%, 50%">
+                <frame src="right_upper_left.html" name="right_upper_left">
+                    <frame src="right_upper_right.html" name="right_upper_right">
+                </frameset>
+                <!-- Lower row divided into three columns -->
+                <frameset cols="33.33%, 33.33%, 33.33%">
+                    <frame src="right_lower_left.html" name="right_lower_left">
+                    <frame src="right_lower_middle.html" name="right_lower_middle">
+                    <frame src="right_lower_right.html" name="right_lower_right">
+                </frameset>
+            </frameset>
+        </frameset>
+    </body>
+    </html>
+    
