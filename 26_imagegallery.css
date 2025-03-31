@@ -1,0 +1,106 @@
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Spacing between images */
+    padding: 20px;
+}
+
+.gallery-item {
+    background-color: #fc9494;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide any image overflow */
+    width: 300px; 
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.gallery-item img {
+    display: block; /* Prevent extra space below image */
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #6114c7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* Two images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%; /* One image per row on even smaller screens */
+    }
+}body{
+    background-color: #e3d9d9;
+}
+.container{
+  width: 80%;
+  
+  margin-left: 150px;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    box-shadow: 10px 10px 15px rgba(240, 240, 172, 0.5);
+    margin-bottom: 20px;
+   
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  #gallary1{
+    background-color: white;
+   margin-right: 20px;
+   margin-left: 20px;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 150px;
+    
+
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+#motupatlu{
+  width: 180px;
+    background-color: white;
+    margin-right: 20px;
+   margin-left: 20px;
+    
+}
+#pikachu{
+  width: 180px;
+background-color: white;
+margin-right: 20px;
+   margin-left: 20px;
+
+}
+#Eevee{
+  margin-right: 20px;
+   margin-left: 20px;
+   background-color: white;
+   width: 180px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(12, 11, 11);
+}
